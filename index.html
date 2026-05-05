@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>liars - GDC</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="bg"></div>
+
+<div class="player">
+
+  <div class="cover">
+    <img src="capa.png">
+  </div>
+
+  <h2>liars</h2>
+  <p>GDC</p>
+
+  <audio id="audio">
+    <source src="musica.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="progress" id="progress">
+    <div class="bar" id="bar"></div>
+  </div>
+
+  <div class="time">
+    <span id="current">0:00</span>
+    <span id="duration">0:00</span>
+  </div>
+
+  <div class="controls">
+    <button onclick="back()">⏮</button>
+    <button class="play" onclick="toggle()">▶</button>
+    <button onclick="forward()">⏭</button>
+  </div>
+
+  <div class="eq">
+    <div></div><div></div><div></div><div></div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
